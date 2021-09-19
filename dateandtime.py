@@ -1,3 +1,5 @@
+"""
+
 import datetime
 
 current_time = datetime.datetime.now()
@@ -23,3 +25,20 @@ print(current_time.second)
 
 print("Microsecond : ", end = "")
 print(current_time.microsecond)
+
+
+
+
+
+import datetime
+current_time = datetime.datetime.now()
+print("Time now at greenwich meridian is : ", end = "")
+print(current_time)
+
+"""
+import datetime
+import pytz
+current_time = datetime.datetime.now(pytz.timezone('Asia/Kolkata'))
+print("The current time in india is : ")
+print(current_time)
+
